@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Configurar convite</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="card admin-card">
+  <p class="eyebrow">CONFIGURAÇÃO DO CONVITE</p>
+  <h1>Defina o encontro</h1>
+  <p class="subtitle">Esses dados ficam salvos no banco SQLite pelo backend.</p>
+
+  <form id="form">
+    <label>Data
+      <input type="date" id="data" required>
+    </label>
+
+    <label>Horário
+      <input type="time" id="hora" required>
+    </label>
+
+    <label>Local
+      <input type="text" id="local" placeholder="Ex.: Restaurante X, São Paulo" required>
+    </label>
+
+    <label>Mensagem
+      <textarea id="mensagem" rows="4" placeholder="Mensagem que aparecerá no convite"></textarea>
+    </label>
+
+    <button class="btn btn-yes full" type="submit">Salvar encontro 💾</button>
+  </form>
+
+  <p id="status" class="status"></p>
+  <a class="back" href="index.html">← Voltar ao convite</a>
+</main>
+<script src="js/configuracao.js"></script>
+</body>
+</html>
